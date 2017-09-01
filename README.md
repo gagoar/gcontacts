@@ -1,7 +1,7 @@
 Gcontacts
 =========
 
-Client-Side tool for handleing oauth2 and retrive contacts using API v3 from Gmail
+Client-Side tool for handling oauth2 and retrieve contacts using API v3 from Gmail
 
 Try the Demo!
 =======
