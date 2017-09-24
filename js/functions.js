@@ -169,7 +169,7 @@ var loadGcontacts = function () {
   gc.async = true
   gc.src   = (/^gcontacts.info/).test( window.location.host || window.location.hostname )
              ? '../src/gcontacts.js'
-             : '//rawgit.com/eventioz/gcontacts/master/src/gcontacts.js'
+             : '//rawgit.com/gagoar/gcontacts/master/src/gcontacts.js'
 
   gc.onload = function () { Gcontacts._ready() };
   s.parentNode.insertBefore(gc, s);
