@@ -167,8 +167,8 @@ var loadGcontacts = function () {
   var s    = document.getElementsByTagName('script')[0]
   gc.type  = 'text/javascript'
   gc.async = true
-  gc.src   = (/^gcontacts.info/).test( window.location.host || window.location.hostname )
-             ? '../src/gcontacts.js'
+  gc.src   = (/^localhost/).test( window.location.host || window.location.hostname )
+             ? '../../../src/gcontacts.js'
              : '//rawgit.com/gagoar/gcontacts/master/src/gcontacts.js'
 
   gc.onload = function () { Gcontacts._ready() };
