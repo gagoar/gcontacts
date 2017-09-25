@@ -9,7 +9,7 @@ var Gcontacts = (function () {
   };
   var config = {
     url: 'https://accounts.google.com/o/oauth2/auth'
-    , origin: window.location.href.replace(window.location.pathname, '')
+    , origin: window.orgin
     , redirect_uri: window.location.href
     , pagination: {
         default: {limit: 25}
@@ -19,11 +19,11 @@ var Gcontacts = (function () {
     , group: {
         from: 'https://www.google.com/m8/feeds/groups/default/'
         , projection: 'thin'
-        , alt: 'json-in-script'
+        , alt: 'json'
     }
     , contacts: {
         from: 'https://www.google.com/m8/feeds/contacts/default/thin'
-        , alt: 'json-in-script'
+        , alt: 'json'
     }
   };
   var parameters = {
