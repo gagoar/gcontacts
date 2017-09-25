@@ -1,0 +1,149 @@
+@import url('demo.css');
+@import url('common.css');
+@import url('icons.css');
+
+.cd-dropdown > span,
+.cd-dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+
+.cd-active.cd-dropdown > span {
+	color: #4d8c9d;
+}
+
+.cd-active.cd-dropdown > span,
+.cd-active.cd-dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #4d8c9d;
+	color: #fff;
+}
+
+.list {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+}
+.list li span {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list li span:last-child {
+  visibility: hidden;
+  height: 0;
+}
+
+.list h3 {
+  margin: 34px 0;
+  text-align: center;
+  padding: 0;
+  color: #AAA;
+	font-size: 20px;
+	font-weight: 400;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.list h3:hover{
+  color: #797878;
+  cursor: pointer;
+}
+.list h3:after{
+  display: inline-block;
+  content: "\00a0";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #AAA transparent transparent transparent;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.list h3:hover:after{
+ border-color: #797878 transparent transparent transparent;
+}
+
+.list h3.active:after{
+  border-width: 0px 6px 8px 6px;
+  border-color: transparent transparent #AAA transparent;
+}
+.list h3.active:hover:after{
+ border-color: transparent transparent #797878 transparent;
+}
+
+.list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.list li:last-child {
+  border: none;
+}
+
+.list li {
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 4px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  color: #797878;
+  display: block;
+
+  -webkit-transition: font-size 0.25s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.25s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.25s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.25s ease, background-color 0.3s ease;
+  transition: font-size 0.25s ease, background-color 0.3s ease;
+}
+
+.list li:hover {
+  cursor: pointer;
+  font-size: 25px;
+  background: #f6f6f6;
+}
+
+.list li:hover span:last-child {
+  height: auto;
+  visibility: visible;
+}
+
+.list li:hover span:first-child {
+  height: 0;
+  visibility: hidden;
+}
+
