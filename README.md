@@ -5,7 +5,7 @@ Client-Side tool for handling oauth2 and retrieve contacts using API v3 from Gma
 
 Try the Demo!
 =======
-http://eventioz.github.io/gcontacts/
+http://gagoar.github.io/gcontacts/
 
 API
 ===
